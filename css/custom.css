@@ -31,6 +31,12 @@
   font-weight: bold;
 }
 
+@font-face {
+  font-family: Brandon Grotesque;
+  src: url("../fonts/brandon/brandon-grotesque-black.otf") format("opentype");
+  font-weight: 900;
+}
+
 .icon {
   color: white;
   font-size: 22px;
