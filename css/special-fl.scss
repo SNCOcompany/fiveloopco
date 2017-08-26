@@ -1,5 +1,5 @@
 $shockpink: #fb1465;
-$shockblue: #0f257a;
+$shockblue: #0d217c;
 $fws: 800px;
 
 .fhtml {
@@ -9,7 +9,7 @@ $fws: 800px;
   background-color: $shockblue;
   font-family: Roboto, sans-serif;
   p {
-    font-size: 12px;
+    font-size: 13px;
     line-height: 1.4;
     letter-spacing: .5px;
   }
@@ -26,17 +26,41 @@ $fws: 800px;
     }
   }
 }
+.fcg, .fcg-9 {
+  a {
+    p {
+      margin: 0 0 20px;
+      font-weight: 700;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      font-family: 'Brandon Grotesque', sans-serif;
+      color: white;
+    }
+  }
+}
 .fcg-9 {
   margin: 4em auto;
   width: $fws;
   height: $fws;
   position: relative;
+  &::before {
+    content: '';
+    display: block;
+    width: $fws*.82;
+    height: $fws*.82;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -53%);
+    overflow: hidden;
+    border-radius: 50%;
+    border: 2px dashed white;
+  }
   h2.overlay {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
+    transform: translate(-50%, -60%);
     font-size: 36px;
     line-height: 1.6;
     text-align: center;
@@ -44,6 +68,7 @@ $fws: 800px;
     letter-spacing: 3px;
     padding: 30px 0;
     z-index: 1;
+    color: white;
     &::before, &::after {
       content: '';
       display: block;
@@ -76,6 +101,18 @@ $fws: 800px;
       transform-origin: left;
       a {
         display: block;
+        img {
+          transition: transform .2s;
+        }
+        h6 {
+          display: inline-block;
+          background: $shockblue;
+        }
+        &:hover {
+          img {
+            transform: scale(1.1);
+          }
+        }
       }
       @for $i from 2 through 9 {
         $j: $i - 1;
@@ -167,7 +204,7 @@ $fws: 800px;
   margin: 20px 0;
 }
 .fsc-u {
-  display: inline-block;
+  display: block;
   padding-bottom: 20px;
   position: relative;
   &::after {
@@ -198,6 +235,9 @@ $fws: 800px;
 }
 .fbg-g5 {
   background-color: darken(white, 5%)!important;
+}
+.ftt {
+  background-color: $shockpink;
 }
 .fimgr {
   display: inline-block;
@@ -231,8 +271,24 @@ $fws: 800px;
     height: 6em;
   }
 }
-@media screen and (min-width: 699px) {
+@media screen and (min-width: 700px) {
   .fsc {
     padding: 80px 0;
+  }
+}
+
+
+
+/**
+ * Customize
+ */
+@media screen and (max-width: 699px) {
+  .ftitle {
+    font-size: 24px;
+  }
+  #services {
+    img {
+      max-width: 80%;
+    }
   }
 }
