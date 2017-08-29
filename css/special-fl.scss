@@ -139,7 +139,7 @@ $fws: 800px;
   .fimg {
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
     position: absolute;
     height: 100%;
     width: 100%;
@@ -147,6 +147,8 @@ $fws: 800px;
     left: 0;
     right: 0;
     bottom: 0;
+    background-color: #0014ff;
+    background-blend-mode: multiply;
   }
   &.fcv-dark {
     h2, h4 {
