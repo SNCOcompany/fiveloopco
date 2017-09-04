@@ -137,7 +137,7 @@
   .fcv .fimg {
     background-position: center;
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
     position: absolute;
     height: 100%;
     width: 100%;
@@ -145,8 +145,7 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: #0014ff;
-    background-blend-mode: multiply; }
+    background-color: #0014ff; }
   .fcv.fcv-dark h2, .fcv.fcv-dark h4 {
     color: white;
     font-weight: 900;
@@ -265,6 +264,33 @@
     font-size: 24px; }
 
   #services img {
-    max-width: 80%; } }
+    max-width: 80%; }
+
+  .fcv .fimg {
+    background-position: center bottom; }
+
+  #cover h2 {
+    font-size: 18px;
+    letter-spacing: 1px;
+    line-height: 1.2; }
+  #cover h4 {
+    font-size: 12px;
+    letter-spacing: 1px;
+    font-weight: 700;
+    line-height: 1.4; }
+    #cover h4 br {
+      display: none; }
+
+  .fbn {
+    padding: 8px;
+    font-size: 11px;
+    letter-spacing: 1px; }
+    .fbn.fbn-wide {
+      min-width: 260px; }
+
+  .hero-fullscreen .container {
+    text-align: center;
+    padding-top: 60px;
+    top: 50%; } }
 
 /*# sourceMappingURL=special-fl.css.map */

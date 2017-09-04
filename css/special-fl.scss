@@ -139,7 +139,7 @@ $fws: 800px;
   .fimg {
     background-position: center;
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
     position: absolute;
     height: 100%;
     width: 100%;
@@ -148,7 +148,7 @@ $fws: 800px;
     right: 0;
     bottom: 0;
     background-color: #0014ff;
-    background-blend-mode: multiply;
+    // background-blend-mode: multiply;
   }
   &.fcv-dark {
     h2, h4 {
@@ -292,5 +292,37 @@ $fws: 800px;
     img {
       max-width: 80%;
     }
+  }
+  .fcv .fimg {
+    background-position: center bottom;
+  }
+  #cover {
+    h2 {
+      font-size: 18px;
+      letter-spacing: 1px;
+      line-height: 1.2;
+    }
+    h4 {
+      font-size: 12px;
+      letter-spacing: 1px;
+      font-weight: 700;
+      line-height: 1.4;
+      br {
+        display: none;
+      }
+    }
+  }
+  .fbn {
+    padding: 8px;
+    font-size: 11px;
+    letter-spacing: 1px;
+    &.fbn-wide {
+      min-width: 260px;
+    }
+  }
+  .hero-fullscreen .container {
+    text-align: center;
+    padding-top: 60px;
+    top: 50%;
   }
 }
