@@ -273,6 +273,9 @@ $fws: 800px;
     height: 6em;
   }
 }
+[data-menu-style="transparent"] .navbar-nav>li>a {
+  color: black;
+}
 @media screen and (min-width: 700px) {
   .fsc {
     padding: 80px 0;
