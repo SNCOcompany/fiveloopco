@@ -296,9 +296,22 @@
     .fbn.fbn-wide {
       min-width: 260px; }
 
-  .hero-fullscreen .container {
-    text-align: center;
-    padding-top: 60px;
-    top: 50%; } }
+  .hero-fullscreen {
+    display: flex;
+    align-items: center; }
+    .hero-fullscreen .container {
+      text-align: center;
+      padding-top: 0;
+      top: 0; }
+
+  .navbar-brand.to-top .pt20 {
+    padding-top: 10px; }
+
+  [data-menu-style="transparent"] .navbar-nav > li:last-child {
+    padding-left: 10px; }
+    [data-menu-style="transparent"] .navbar-nav > li:last-child a {
+      padding: 8px 16px; }
+  [data-menu-style="transparent"] .navbar-nav > li > a {
+    color: white; } }
 
 /*# sourceMappingURL=special-fl.css.map */
